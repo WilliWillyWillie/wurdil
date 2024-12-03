@@ -124,7 +124,7 @@ class _GameScreenState extends State<GameScreen> {
     ];
 
     double screenWidth = MediaQuery.of(context).size.width;
-    double buttonWidth = screenWidth / 10;
+    double buttonWidth = screenWidth / 12;
     buttonWidth = buttonWidth > 50 ? 50 : buttonWidth;
 
     return Column(
@@ -139,7 +139,7 @@ class _GameScreenState extends State<GameScreen> {
                   onPressed: () => handleLetterInput(char),
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(buttonWidth, buttonWidth),
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 6),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4.0),
                     ),
